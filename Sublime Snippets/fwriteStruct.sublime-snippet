@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+${1:arq} = fopen("${2:Nome do Arquivo}", "wb");
+fwrite(${4:structVar}, sizeof(struct ${5:structName}), ${6:structQuant}, ${1:arq});
+fclose(${1:arq});
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>fwriteStruct</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.c</scope>
+</snippet>
